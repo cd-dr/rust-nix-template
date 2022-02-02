@@ -5,6 +5,7 @@ See [Nix-ifying Rust projects](https://notes.srid.ca/rust-nix) for details.
 ## Adapting this template
 
 - Change `name` in Cargo.toml and flake.nix. Also change `description` in flake.nix.
+- Please run `cargo metadata` once to reset the Cargo.lock file, and flake.lock file can also be deleted if more recent versions of rust-overlay and other packages are needed.
 - There are two CI workflows, and one of them uses Nix which is slower (unless you configure a cache) than the other that is based on rustup. Pick one or the other depending on your trade-offs.
 
 ## Development (Flakes)
